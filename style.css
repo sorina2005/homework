@@ -1,0 +1,108 @@
+@import "common/navigation_style.css";  /*  NAVBAR / REASPINSIVE NAVBAR  */
+@import "common/footer_style.css";  /*  FOOTER  */
+
+
+/*---------------THE REST OF THE HEADER-------------------*/
+
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #FFE6A7;
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+section.sec1{
+    background-image: url(background.webp);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: -1;
+}
+
+section.sec1 h1{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: white;
+    padding: 15rem 3rem 3rem 3rem;
+    z-index: 2;
+}
+
+section.sec1:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .8;
+}
+
+
+section.sec2{
+    padding: 100px;
+    height: auto;
+}
+
+
+section.sec2 p{
+    font-size: 1.5rem;
+}
+
+
+section.sec3{
+    background: url(mainpage.jpg)no-repeat center/cover ;
+    background-attachment: fixed;
+}
+
+
+section.sec4{
+    background: url(mainpage2.jpeg)no-repeat center/cover ;
+    background-attachment: fixed;
+}
+
+
+/*---------------MAIN CONTENT-------------------*/
+
+  
+main{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+
+div a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #432818;
+    text-align: center;
+}
+  
+
+div a:hover{
+    color:#99582A;
+    
+}
+
+
+h1{
+    text-align: center;
+    color:#6f1d1b;
+}
+
+
