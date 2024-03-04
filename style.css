@@ -31,15 +31,27 @@ section.sec1{
     z-index: -1;
 }
 
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 section.sec1 h1{
     display: block;
+    padding: 5rem ;
     width: fit-content;
     font-size: 2rem;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
     color: white;
-    padding: 15rem 3rem 3rem 3rem;
     z-index: 2;
 }
+
 
 section.sec1:after{
     content:'';

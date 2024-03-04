@@ -38,15 +38,48 @@ function validation(a,regEx){
   
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const isValid =  emailRegExp.test(email.value);
-    if (!isValid) {
+    const isValid1 =  emailRegExp.test(email.value);
+    const isValid2 =  textRegExp.test(firstName.value);
+    const isValid3 =  textRegExp.test(lastName.value);
+    const isValid4 =  textRegExp.test(subject.value);
+
+    if (!isValid2) {
+      firstName.className = "invalid";
+      error.className = "error active";
+    } else {
+      firstName.className = "valid";
+      error.textContent = "";
+      error.className = "error";
+    }
+
+    if (!isValid3) {
+      lastName.className = "invalid";
+      error.className = "error active";
+    } else {
+      lastName.className = "valid";
+      error.textContent = "";
+      error.className = "error";
+    }
+
+    if (!isValid1) {
       email.className = "invalid";
-      error.textContent = "Enter a valid email!";
       error.className = "error active";
     } else {
       email.className = "valid";
       error.textContent = "";
       error.className = "error";
+    }
+
+    if (!isValid4) {
+      subject.className = "invalid";
+      error.className = "error active";
+    } else {
+      subject.className = "valid";
+      error.textContent = "";
+      error.className = "error";
+    }
+
+    if(isValid1 && isValid2 && isValid3 && isValid4){
       submissionCount++; 
       updateLocalStorage();
       updateCounter();
@@ -56,7 +89,6 @@ function validation(a,regEx){
   });
 
   updateCounter();
-
 
 
  
