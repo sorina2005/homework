@@ -77,13 +77,13 @@ section.sec2 p{
 
 
 section.sec3{
-    background: url(mainpage.jpg)no-repeat center/cover ;
+    background: url(page1.jpg)no-repeat center/cover ;
     background-attachment: fixed;
 }
 
 
 section.sec4{
-    background: url(mainpage2.jpeg)no-repeat center/cover ;
+    background: url(page2.jpg)no-repeat center/cover ;
     background-attachment: fixed;
 }
 

@@ -8,8 +8,7 @@
         let lengthItems = items.length - 1;
 
         next.onclick = function(){
-            if(active + 1 > lengthItems)
-          {
+            if(active + 1 > lengthItems){
             active = 0;
           }
           else { 
