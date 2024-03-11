@@ -4,73 +4,145 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>about us</title>
-        <link rel="stylesheet" href="style.css" >
+        <!--<link rel="stylesheet" href="style.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
 
         <header class="header">
-            <i class='bx bxs-bowl-hot'>Bite Station</i>
-            <input type="checkbox" id="check">
-            <label for="check" class="icons">
-                <i class='bx bx-menu' id="menu-icon"></i>
-                <i class='bx bx-x' id="close-icon"></i>
-            </label>
-            <nav class="navbar">
-                <a href="../index.html">HOME</a>
-                <a href="">ABOUT US</a>
-                <a href="../contact/contact.html">CONTACT</a>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><i class='bx bxs-bowl-hot'>Bite Station</i></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link" href="../index.html">Home</a>
+                      <a class="nav-link active " aria-current="page" href="aboutus.html">About Us</a>
+                      <a class="nav-link" href="../contact/contact.html">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
            </header>
 
 
            <main>
-            <div class="heading">
-                <h1>About us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime pariatur ut consequuntur possimus!</p>
-            </div>
-            <div class="container">
-                <section class="about">
-                    <div class="about-image">
-                        <img src="background.jpg">
-                    </div>
-                    <div class="about-content">
+            <div class="container" style="padding-top:80px">
+              <div class="row">
+                <div class="col-md-6" >
+                        <img src="background.jpg" width="100%" height="100%">
+                  </div>
+                  <div class="col-md-6" >
                         <h2>Lorem, ipsum.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus velit omnis enim! Voluptatum, dolorum.</p>
-                    </div>
-                </section>
+                      </div>
+                  </div>
             </div>
             </main>
             
-            <footer>
-                <div class="row">
-                    <div class="col">
-                        <h3>Links</h3>
-                        <ul>
-                          <li><a href="../index.html" class="links">HOME</a></li>
-                          <li><a href="" class="links">ABOUT US</a></li>
-                          <li><a href="../contact/contact.html" class="links">CONTACT</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h3>Newsletter</h3>
-                        <p>If you want to keep up with us you can follow us by entering your email down bellow</p>
-                        <form>
-                            <input type="email" placeholder="Enter your email" required>
-                            <button type="submit" class="button">Submit</button>
-                        </form>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/sorina.ciobanu.771/" class="fa fa-facebook" target="_blank" ></a>
-                            <a href="https://www.instagram.com/ciobanu_sorina05/" class="fa fa-instagram" target="_blank"></a>
-                            <a href="https://twitter.com/Sorina80468616" class="fa fa-twitter" target="_blank"></a>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <p class="copyright">Ciobanu Sorina © 2024 All rights reserved.</p>
-            </footer>
+             <!-- Footer -->
+<footer class="bg-body-tertiary text-center">
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+          <a
+          data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="https://www.facebook.com/sorina.ciobanu.771"
+            role="button"
+            target="_blank"
+            ><i class="fa fa-facebook-f"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee;"
+            href="https://twitter.com/Sorina80468616"
+            role="button"
+            target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac;"
+            href="https://www.instagram.com/ciobanu_sorina05/"
+            role="button"
+            target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333;"
+            href="https://github.com/sorina2005"
+            role="button"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </section>
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form5Example24" class="form-control" placeholder="email@something.com" />
+                <label class="form-label" for="form5Example24">Email address</label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="mb-4">
+        <p>
+        Tasteful recipes and easy to make.
+        </p>
+      </section>
+      <!-- Section: Links -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mx-auto">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-auto">
+              <li>
+                <a class="text-body" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="text-body" href="about us/aboutus.html">About Us</a>
+              </li>
+              <li>
+                <a class="text-body" href="contact/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        Ciobanu Sorina © 2024 All rights reserved.
+    </div>
+  </footer>
     </body>
 </html>

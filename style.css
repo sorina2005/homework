@@ -1,15 +1,15 @@
-@import "common/navigation_style.css";  /*  NAVBAR / REASPINSIVE NAVBAR  */
-@import "common/footer_style.css";  /*  FOOTER  */
+/*@import "common/navigation_style.css";   NAVBAR / REASPINSIVE NAVBAR  
+@import "common/footer_st/yle.css";    FOOTER  */
 
 
 /*---------------THE REST OF THE HEADER-------------------*/
 
 
-*{
+/*{
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
-}
+}*/
 
 
 body{
@@ -91,7 +91,7 @@ section.sec4{
 /*---------------MAIN CONTENT-------------------*/
 
   
-main{
+/*main{
     padding-top: 70px;
     padding-bottom: 30px;
 }
@@ -126,7 +126,7 @@ h1{
 /*------------SLIDESHHOW----------*/
 
 
-.slider{
+/*.slider{
     width: 500px;
     max-width: 100vw;
     height: 500px;
